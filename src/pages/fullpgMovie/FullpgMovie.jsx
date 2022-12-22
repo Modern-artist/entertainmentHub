@@ -11,14 +11,14 @@ import MoviesSec from "../../components/moviesSec/MoviesSec";
 const FullpgMovie = () => {
   const [currentMovieDetail, setMovie] = useState();
   const { id } = useParams();
-  const title = id+"/similar";
+  const title = id + "/similar";
   const recom = id + "/recommendations";
   const lists = id + "/credits";
-  
+
   useEffect(() => {
     getData();
     window.scrollTo(0, 0);
-  }, []);
+  }, [id]);
 
   const getData = () => {
     fetch(
