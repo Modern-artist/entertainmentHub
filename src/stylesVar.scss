@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+$lightText: rgb(136, 136, 136);
+
+@mixin button {
+  //   padding: 20px;
+  width: fit-content;
+  background: linear-gradient(90deg, #ff4b2b, #b0415a);
+  border-radius: 1000px;
+}
+
+@mixin flexAlignCentre {
+  display: flex;
+  align-items: center;
+}
+
+@mixin gradiantText {
+  background: linear-gradient(90deg, #ff416c -6%, #ff4b2b 88.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+@mixin playBtn {
+  @include flexAlignCentre;
+  border: 2px solid #ff4b30;
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 20px;
+  span {
+    // font-size: 1.4rem;
+    color: white;
+  }
+}
+@mixin watchLaterBtn {
+  @include flexAlignCentre;
+  span {
+    margin-left: 10px;
+    // font-size: 1.4rem;
+    color: white;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  // height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  height: 4px;
+  // width: 4px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff4b2b73;
+  /* opacity: .1; */
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4b2b;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: rgba(0, 0, 0, 0);
+}

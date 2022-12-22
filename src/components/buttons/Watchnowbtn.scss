@@ -1,0 +1,15 @@
+@import "../../stylesVar.scss";
+
+.Watchnowbtn{
+    @include playBtn;
+    span{
+        font-size: 1.4rem;
+        color: white;
+    }
+}
+.Watchlater{
+    @include watchLaterBtn;
+    span{
+        font-size: 1.4rem;
+    }
+}

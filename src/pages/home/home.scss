@@ -1,0 +1,110 @@
+@import "../../stylesVar.scss";
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 16px;
+  text-align: left;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    #000000,
+    rgba(0, 0, 0, 0.62),
+    rgba(0, 0, 0, 0)
+  );
+  h1 {
+    font-weight: 400;
+    span {
+      @include gradiantText;
+      font-weight: bold;
+      line-height: 200%;
+    }
+  }
+  button {
+    @include flexAlignCentre;
+
+    @include flexAlignCentre;
+    border: none;
+    // color: white;
+    font-size: 24px;
+    padding: 4px;
+    border-radius: 99px;
+    margin-right: 20px;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    span {
+      color: white;
+      font-weight: bold;
+      padding: 0 20px 0 10px;
+    }
+  }
+}
+.posterImage__overlay {
+  position: absolute;
+  padding: 24px;
+  // bottom: 50%;
+  top: 60%;
+  right: 24px;
+  border-radius: 12px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  opacity: 1;
+  transition: opacity 0.3s;
+  animation: mymove 3s infinite;
+
+  //   line-height: 150%;
+  div {
+    margin: 4px;
+  }
+  .posterImage__runtime{
+    @include flexAlignCentre;
+    .imlogo{
+        width: 40px;
+    }
+    .imlogo img{
+        width: 100%;
+    }
+  }
+  .posterImage__description {
+    line-height: 150%;
+    color: #cbcbcb;
+  }
+
+  .posterImage__title {
+    font-weight: 900;
+    @include gradiantText;
+    font-size: 2.4rem;
+
+    margin-bottom: 0.4rem;
+    text-align: left;
+  }
+}
+@keyframes mymove {
+  0% {
+    top: 56%;
+  }
+
+  50% {
+    top: 54%;
+    // scale: 1.02;
+    // box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  }
+
+  100% {
+    top: 56%;
+  }
+}

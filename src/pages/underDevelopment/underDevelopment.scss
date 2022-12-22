@@ -1,0 +1,15 @@
+@import '../../stylesVar.scss';
+.landindPg{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../assets/webCons.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    
+    h1{
+        @include gradiantText;
+        font-size: 4rem;
+    }
+}

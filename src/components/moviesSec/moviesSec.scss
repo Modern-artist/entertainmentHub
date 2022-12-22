@@ -1,0 +1,27 @@
+@import "../../stylesVar.scss";
+
+.MoviesSec{
+    margin: 6rem 30px;
+    
+    .secInfo{
+         @include flexAlignCentre;
+         justify-content: space-between;
+         color: white;
+         span{
+            background-color: rgb(32, 32, 32);
+            padding: 10px 20px;
+            color: $lightText;
+            border-radius: 8px
+         }
+        // margin: 30px;
+    }
+    .allMovies{
+        @include flexAlignCentre;
+        margin: 20px 0;
+        background-color: #1a1a1a;
+        border-radius: 20px;
+        overflow-x: scroll;
+        min-width: 100%;
+
+    }
+}

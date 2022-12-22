@@ -1,0 +1,53 @@
+@import '../../stylesVar.scss';
+
+.navbar{
+    width: 100vw;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    .navElement{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 24px;
+
+        .logo h2{
+            color: rgb(255, 255, 255);
+            font-weight: 400;
+        }
+        .navOptions{
+            @include flexAlignCentre;
+            form{
+                @include flexAlignCentre;
+                button{
+                    backdrop-filter: blur(5px);
+                    color: rgb(255, 255, 255);
+                    padding: 16px;
+                    margin-left: 16px;
+                    border-radius: 199px;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border: none;
+                }
+                .searchBar{
+                    @include flexAlignCentre;
+                    backdrop-filter: blur(5px);
+                    border: none;
+                    width: 25vw;
+                    height: 30px;
+                    border-radius: 199px;
+                    color: rgb(255, 255, 255);
+                    justify-content: space-between;
+                    padding: 10px 20px;
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+            }
+            .hamOptions{
+                @include button;
+                @include flexAlignCentre;
+                padding: 10px;
+                margin-left: 20px;
+                aspect-ratio: 1;
+            }
+        }
+    }
+}

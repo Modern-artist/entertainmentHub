@@ -1,0 +1,37 @@
+@import '../../stylesVar.scss';
+
+.NavDown{
+    text-decoration: none;
+    z-index: 4;
+    margin: 40px 0;
+    width: 100vw;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    background-color: rgba(3, 3, 3, 0.5);
+    // background-color: #000;
+    backdrop-filter: blur(8px);
+    .navEle{
+        text-decoration: none;
+        color: aliceblue;
+        width: 70vw;
+        justify-content: space-around;
+        @include flexAlignCentre;
+        font-size: 1.1rem;
+        span{
+            text-decoration: none;
+        }
+        .searchBar{
+                    @include flexAlignCentre;
+                    width: 25vw;
+                    height: 30px;
+                    border-radius: 199px;
+                    color: rgb(161, 161, 161);
+                    justify-content: space-between;
+                    padding: 10px 20px;
+                    background-color: rgba(134, 134, 134, 0.2);
+                }
+    }
+}
